@@ -3,6 +3,7 @@ import LoginModal from "./components/LogInModal";
 import CustomizeModal from "./components/CustomizeModal";
 import Navbar from "./components/Navbar";
 import "./css/index.css";
+import Footer from "./components/Footer";
 
 function App() {
   const initialNavLinks = [
@@ -80,9 +81,7 @@ function App() {
         <img src={customUrls.overview} alt="overview" />
       </section>
       <section className="lorem"></section>
-      <section className="lorem"></section>
-      <section className="lorem"></section>
-      <footer>si</footer>
+      <Footer/>
       <LoginModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
